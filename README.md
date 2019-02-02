@@ -1,2 +1,2 @@
-- `docker run --name fibos -p 8801:8801  -dt fibos/dev-server `
+- `docker run --name fibos -p 8801:8801  -dt huming0618/fibos `
 - `docker exec -d fibos ./run.sh`
