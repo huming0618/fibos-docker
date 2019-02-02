@@ -14,8 +14,11 @@ RUN cd /var/local && \
     cd fib-testnet && \
     fibos --install 
 RUN echo "[Ready] To Run FIBOS Node"
-COPY run.sh /var/local/fib-testnet 
-RUN chmod +x /var/local/fib-testnet/run.sh
+COPY run /var/local/fib-testnet
+COPY create-account /var/local/fib-testnet 
+COPY scripts /var/local/fib-testnet/my-scripts
+RUN chmod +x /var/local/fib-testnet/run
+RUN chmod +x /var/local/fib-testnet/create-account
 EXPOSE 8801
 WORKDIR /var/local/fib-testnet
 # ENTRYPOINT ["fibos","index.js","dev"]
