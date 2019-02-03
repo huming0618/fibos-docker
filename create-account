@@ -1,3 +1,4 @@
 #!/bin/sh
-fibos ./my-scripts/create-account.js
+echo "To create account.... $1"
+fibos ./my-scripts/create-account.js $1
 
