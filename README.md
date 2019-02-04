@@ -6,7 +6,7 @@ docker exec -d fibos ./run
 
 ### To check the status of running node
 ```
-curl --request POST --url http://47.52.128.147:8801/v1/chain/get_info
+curl --request POST --url http://127.0.0.1:8801/v1/chain/get_info
 ```
 
 ### To create the account 
