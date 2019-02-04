@@ -23,8 +23,11 @@ var fibos_client = FIBOS({
 
 //var creator = "testnetbppa1"
 var newAccount = process.argv[2] || "testnetnewc1" 
-console.log(fibos_client.getInfoSync());
-console.log(fibos_client.getAccountSync(creator))
+//console.log(fibos_client.getInfoSync());
+//console.log(fibos_client.getAccountSync(creator))
+console.log(`try to create account ${newaccount} with key:`)
+console.log(creatorPubKey)
+console.log(creatorPriKey)
 
 var auth = {
 	"authorization": creator

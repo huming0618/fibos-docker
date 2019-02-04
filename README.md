@@ -11,7 +11,7 @@ curl --request POST --url http://47.52.128.147:8801/v1/chain/get_info
 
 ### To create the account 
 ```
-docker exec -d fibos ./create-account  testnetbabc1
+docker exec fibos ./create-account  testnetbabc1
 ```
 
 
